@@ -1,0 +1,133 @@
+.formSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.formContainer{
+    background-color: rgba(var(--blue), 0.20);
+    height: calc(100vh - 80px);
+    max-height: 882px;
+    width: calc(100%);
+    max-width: 1414px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+
+.left{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+
+.right{
+    margin-left: 30px;
+    height: auto;
+    width: calc(55% - 30px);
+}
+
+.formTitle{
+    font-size: 2rem;
+    color: white;
+    font-family: "LemonMilk" !important;
+
+    span:last-child{
+        font-size: 2.75rem;
+        font-weight: lighter;
+    }
+}
+
+.form{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.alterContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 743px){ 
+    .formSection{
+        padding: 0rem;
+    }
+
+    .formContainer{    
+        flex-direction: column;
+        border-radius: 0rem;
+        padding: 1rem;
+        max-height: unset;
+        height: auto;
+    }
+
+    .left{
+        width: 100%;
+        height: 50vh;
+    }
+    
+    
+    .right{
+        margin-left: 0;
+        margin-top: 2rem;
+        width: calc(100%);
+    }
+
+    .formTitle{
+        font-size: 1rem;
+    
+        span:last-child{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 744px) and (max-width: 960px) { 
+    .formSection{
+        padding: 1rem;
+    }
+
+    .formContainer{    
+        flex-direction: column;
+        padding: 1rem;
+        max-height: unset;
+        height: auto;
+    }
+
+    .left{
+        width: 100%;
+        height: 38rem;
+    }
+    
+    
+    .right{
+        margin-left: 0;
+        margin-top: 2rem;
+        height: auto;
+        width: calc(100%);
+    }
+    
+}
+

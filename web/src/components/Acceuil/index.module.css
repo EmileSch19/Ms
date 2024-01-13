@@ -1,0 +1,263 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.scroll {
+  width: 30%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 1/0.5;
+  /* Half of the original height */
+  border-top-left-radius: 450px;
+  /* Half of the original border-radius */
+  border-top-right-radius: 450px;
+  /* Half of the original border-radius */
+  position: relative;
+  background-color: #00022C;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Hide any content beyond the semicircle */
+}
+
+.firstp {
+  font-size: 1.25rem;
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.arrowContainer {
+  animation: bounce 10s infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.Background {
+  opacity: 0.5;
+  object-position: 85%;
+}
+/* the arrowrs inside the scroll div*/
+.icon {
+  margin-right: 5px;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.Object {
+  width: 554px;
+  /* Adjust the width as needed */
+  height: 675px;
+  /* Adjust the height as needed */
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.textContainer {
+  /* Center the text vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.textContainer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer span{
+  display: block;
+}
+
+.text1 {
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: #f00;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.murder {
+  
+  color: #0085ff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text2 {
+  color: #fff;
+  text-align: center;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 966px;
+  margin: 1.5rem 0;
+}
+
+.text3 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 567px;
+}
+.fixedIconContainer {
+  position: fixed;
+  bottom: 2.8125rem; 
+  right: 5rem; 
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0085ff;
+  border-radius: 50%; /* To make it a circle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+@media (min-width: 744px) and (max-width: 960px){
+  
+  .container{
+    height: 100vh;
+    width: 100%;
+  }
+  .Object {
+    /* Adjust the width and height for iPad portrait */
+    top:3.5rem;
+    left: -4rem;
+    transform: none;
+    
+  }
+  .Background {
+    background-image: url('/silhouette.png');
+    
+  }
+  .scroll {
+    width: 50%;
+  }
+
+  .text1, .murder {
+    font-size: 32px;
+  }
+  .text2{
+    font-size: 4rem;
+    max-width: 644px;
+  }
+  .text3{
+    font-size: 20px;
+  }
+  .arrowContainer{
+    top:10%;
+  }
+  .fixedIconContainer{
+    bottom: 5.2rem; 
+  right: 2.2rem; 
+  }
+
+}
+
+/* For iPhone portrait */
+@media (max-width: 743px){
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .backgroundParent{
+    height: 40rem;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .textContainer {
+    /* Center the text vertically and horizontally */
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: unset;
+    transform: unset;
+    text-align: center;
+    width: 100%;
+    padding: 0 9%;
+  }
+  .text1{
+    font-size: 1rem;
+  }
+  .murder{
+    font-size: 1rem;
+  }
+  .text2{
+    font-size: 40px;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .text3{
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .Object {
+    width: 250px;
+    height: 305px;
+    top: 23rem;
+  }
+
+  .scroll {
+    display: none;
+  
+  }
+  .fixedIconContainer{
+    bottom: 2rem;
+    right: 1rem;
+  }
+  
+}
+

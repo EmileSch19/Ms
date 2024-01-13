@@ -1,0 +1,20 @@
+.puceContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.puceElements{
+    width: 100%;
+    max-width: 1114px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 743px) { 
+    .puceContainer{    
+        padding: 1rem;
+    }
+}

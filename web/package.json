@@ -1,0 +1,35 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-dom": "18.2.6",
+    "babel": "^6.23.0",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "next": "13.4.9",
+    "next-images": "^1.8.5",
+    "nodemailer": "^6.9.3",
+    "nodemailer-express-handlebars": "^6.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.0",
+    "@types/nodemailer": "^6.4.8",
+    "@types/react": "18.2.47",
+    "sass": "^1.69.7",
+    "typescript": "5.3.3"
+  }
+}

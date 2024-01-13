@@ -1,0 +1,169 @@
+.HeaderTitle{
+color: #FFF;
+font-size: 20px;
+font-family: "LemonMilk" !important;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin:10px;
+}
+.HeaderContainer{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0.4em);
+    transition: background .3s;
+}
+.ListItem{
+    padding:10px 16px;
+    border-radius: 17.5px;
+    background-color: rgba(37, 56, 74, 0.20);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 10px;
+    flex-shrink: 0;
+
+}
+.ListItem:hover{
+    background-color:#25384A ;
+}
+.HeaderList{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:20px;
+}
+.game{
+    font:bold;
+    font-weight: 700;
+}
+.ListItem{
+    padding:10px 16px;
+    border-radius: 17.5px;
+    background-color: rgba(37, 56, 74, 0.20);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+.HamburgerMenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .Line {
+    height: 2px;
+    border-radius: 2px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 4px;
+    transition: transform 0.3s ease-in;
+  }
+  /* Add the new class for X shape */
+  .HamburgerMenu.open .Line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .HamburgerMenu.open .Line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .HamburgerMenu.open .Line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+  /* Show hamburger menu on iPads and iPhones */
+  @media (max-width: 1024px) {
+    .HamburgerMenu {
+      display: flex;
+        margin-right: 10px;
+    }
+    .ListItem{
+        padding: 20px;
+        background-color: transparent;
+        margin:10px;
+    }
+    .ListItem:hover{
+       background-color: transparent;
+    }
+    /* Hide regular menu when the hamburger menu is open */
+    .HeaderList {
+        height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      right: -1.7%;
+      background-color: rgba(255, 255, 255, 0.534);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      justify-content: space-between;
+    }
+    
+      
+    /* Show regular menu when the hamburger menu is open */
+    .HeaderList.Open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    
+  }
+  
+  @media (max-width: 743px) {
+      .HeaderContainer{
+        height: 80px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+      }
+      .ListItem{
+        padding: 20px;
+        background-color: transparent;
+        margin:10px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+      .HeaderList {
+        height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 50%;
+      right: -1.7%;
+      background-color: rgba(37, 56, 74, 0.7);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      justify-content: space-between;
+    }
+      
+  }
+  

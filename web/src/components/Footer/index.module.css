@@ -1,0 +1,158 @@
+.containerFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Set the parent container as a reference for absolute positioning */
+  overflow: hidden;
+}
+
+.recFooter {
+  background: white;
+  width: 100%;
+  padding: 10rem 4rem;
+  -webkit-clip-path: polygon(0 0,100% 30%,100% 100%,0 70%);
+  clip-path: polygon(0 0,100% 30%,100% 100%,0 70%);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  font-weight: 700;
+}
+
+.titleFooter {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8rem;
+  line-height: 0.8em;
+  font-family: "LemonMilk" !important;
+  font-weight: 400;
+  margin: 0;
+}
+
+.socialMediaIcons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1114px;
+  width: 100%;
+}
+
+.iconFacebook,
+.iconInstagram,
+.iconTwitter,
+.iconWhatsapp,
+.iconSnap {
+  color: #00022c;
+  height: 2.5rem;
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1511px;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.regel {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 1.5rem 0;
+}
+.regel p {
+  margin: 0.5rem 0;
+}
+
+.first {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.third {
+  font-weight: 600;
+}
+
+.second a{
+  color: #fff !important;
+}
+
+
+/* Responsive pour ipad*/
+@media (min-width: 744px) and (max-width: 960px) {
+  .recFooter {
+    padding: 8rem 6rem;
+    margin-top: 3rem;
+    -webkit-clip-path: polygon(0 0,100% 20%,100% 100%,0 80%);
+    clip-path: polygon(0 0,100% 20%,100% 100%,0 80%);
+  }
+
+  .bottomContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0 0rem;
+  }
+
+  .berdineGame{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .titleFooter {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .regel {
+    margin: 1.5rem 3rem;
+  }
+}
+/* Responsive pour iphone */
+@media (max-width: 743px) {
+  .recFooter {
+    padding: 2rem 2rem;
+    margin-top: 5rem;
+    -webkit-clip-path: polygon(0 0,100% 0%,100% 100%,0 100%);
+    clip-path: polygon(0 0,100% 0%,100% 100%,0 100%);
+  }
+
+  .iconFacebook,
+  .iconInstagram,
+  .iconTwitter,
+  .iconWhatsapp,
+  .iconSnap {
+    color: #00022c;
+    height: 1.5rem;
+  }
+
+  .bottomContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 0 0rem;
+  }
+
+  .berdineGame{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .titleFooter {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .regel {
+    margin: 1.5rem 2rem;
+  }
+}

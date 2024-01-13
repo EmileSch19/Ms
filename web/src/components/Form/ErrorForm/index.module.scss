@@ -1,0 +1,15 @@
+.error{
+    width: 100%;
+    padding:0.25rem;
+    align-items: center;
+    border-radius: 0.35em;
+    display: flex;
+    background-color: rgba(var(--red), 0.2);
+    color: rgba(var(--red));
+    font-size: 0.8rem;
+
+    i{
+        font-size: 1em !important;
+        font-weight: 300;
+    }
+}
